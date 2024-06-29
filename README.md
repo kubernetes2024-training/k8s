@@ -165,6 +165,11 @@ def hello_world():
     return '<p style="font-size: 50px; color: green;">Hello, World from Docker</p>'
 root@k8s:~/hello-world-python#
 ```
+```
+root@k8s:~/hello-world-python# cat requirements.txt 
+flask
+root@k8s:~/hello-world-python#
+```
 
 #### Application version 1.0.0 will be built using the app-red.py
 
