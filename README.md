@@ -153,6 +153,7 @@ EXPOSE 5000
 CMD ["flask", "run", "--host", "0.0.0.0"]
 root@k8s:~/hello-world-python# 
 ```
+```
 root@k8s:~/hello-world-python# cat app-green.py 
 from flask import Flask
 
@@ -165,7 +166,7 @@ def hello_world():
 root@k8s:~/hello-world-python#
 ```
 
-Application version 1.0.0 will be built using the app-red.py
+#### Application version 1.0.0 will be built using the app-red.py
 
 ```root@k8s:~/hello-world-python# docker build -t kubernetes2024/webapp:1.0.0 -f Dockerfile-red .
 [+] Building 24.3s (4/8)                                                                                                                     docker:default
@@ -181,7 +182,7 @@ Application version 1.0.0 will be built using the app-red.py
 root@k8s:~/hello-world-python#
 ```
 
-Verify the image 
+#### Verify the image 
 ```
 root@k8s:~/hello-world-python# docker image ls 
 REPOSITORY              TAG       IMAGE ID       CREATED         SIZE
