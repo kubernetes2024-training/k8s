@@ -12,7 +12,7 @@ root@k8s:~#
 ```
 
 Install docker using the below script  
-``
+```
 root@k8s:~# cat docker-install.sh 
 #!/bin/bash
 
