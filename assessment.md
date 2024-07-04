@@ -94,7 +94,7 @@ kubectl describe pod hello -n <YOUR NAMESPACE> | grep "Image:"
 ```
 
 13. Perform the following:  
-Schedule a container using the image kubernetes-2024/webapp:2.0.0 in your namespace.  
+Schedule a container using the image kubernetes2024/webapp:2.0.0 in your namespace.  
 The pod and container name should be webapp.  
 It should be running in your namespace.  
 The container should always be running on kind-werker node.  
