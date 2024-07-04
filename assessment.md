@@ -4,7 +4,7 @@
 
 2. Create a deployment manifest file named /tmp/echoserver-<YOUR_NAME>.yaml with the following contents
    
-``
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -27,7 +27,7 @@ spec:
         name: hello
         ports:
         - containerPort: 8080
-``
+```
 
 4. Apply the deployment manifest
 
