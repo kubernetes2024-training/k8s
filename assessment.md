@@ -98,7 +98,7 @@ Schedule a container using the image kubernetes2024/webapp:2.0.0 in your namespa
 The pod and container name should be webapp.  
 It should be running in your namespace.  
 The container should always be running on kind-werker node.  
-The application port is 6000.  
+The application port is 5000.  
 Take screenshot of the manifest file.  
 
 Refer the sample manifest and create a manifest for this scenario. Add/modify the configuration in the manifest to fit the requirement.  
