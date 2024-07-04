@@ -39,7 +39,7 @@ The echoserver container is running in a Pod. Each Pod in Kubernetes is assigned
 This service can be referenced by its label, and therefore access with the help of an internal Domain Name System (DNS) that will resolve the URL to the service based on the label. The Service will add a layer of indirection where it will know how to connect to the Pod. All the other applications in the cluster will connect to the service through DNS lookups and the services will connect to the specific Pods.  
 
 6. Expose the pod using the below command 
-``
+```
 kubectl expose deployment hello -n <YOUR NAMESPACE> --type=LoadBalancer
 ```
 7. Take screenshot of the application by accessing the External IP of the service on port 8080.
