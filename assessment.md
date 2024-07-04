@@ -2,7 +2,8 @@
 
 1. Create a namespace <YOUR_NAME>
 
-2. Create a deployment manifest file named /tmp/echoserver-<YPUR_NAME>.yaml with the following contents
+2. Create a deployment manifest file named /tmp/echoserver-<YOUR_NAME>.yaml with the following contents
+   
 ``
 apiVersion: apps/v1
 kind: Deployment
@@ -28,11 +29,11 @@ spec:
         - containerPort: 8080
 ``
 
-3. Apply the deployment manifest
+4. Apply the deployment manifest
 
-4. Take screenshot of the deployment status using kubectl command 
+5. Take screenshot of the deployment status using kubectl command 
 
-5. Take screenshot of the pods running in your namespace 
+6. Take screenshot of the pods running in your namespace 
 
 The echoserver container is running in a Pod. Each Pod in Kubernetes is assigned an internal and virtual IP address at 10.xx.xx.xx. However, from outside of the cluster these IPs are not addressable, and never should be. Even within the cluster other applications normally should not attempt to address these Pods IPs. Instead each replicated Pod is fronted by a single service.  
 
